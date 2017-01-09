@@ -1,0 +1,26 @@
+{
+  "name": "turo-rental-car-search",
+  "title": "Turo Rental Car Search",
+  "description": "A rental car search webapp build as a code excercise for Turo.",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Christopher M. Gladney",
+    "email": "gladney.c@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maniacaldev/rental-search-excercise.git"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "3.1.1"
+  },
+  "keywords": []
+}

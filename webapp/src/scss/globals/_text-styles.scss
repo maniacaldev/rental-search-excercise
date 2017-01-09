@@ -1,0 +1,17 @@
+body {
+  font-size: (16rem / 16);
+}
+
+@media (min-width: $medium) {
+  body {
+    font-size: (17rem / 16);
+  }
+}
+
+@media (min-width: $large) {
+  body {
+    font-size: (18rem / 16);
+  }
+}
+
+

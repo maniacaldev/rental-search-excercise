@@ -1,0 +1,23 @@
+{
+  "name": "turo-rental-car-search",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-autoprefixer": "~3.0.3",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-copy": "~0.8.2",
+    "grunt-contrib-htmlmin": "~0.5.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "~0.9.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-copy": "~0.1.0",
+    "grunt-newer": "^1.1.2",
+    "grunt-shell": "1.1.2",
+    "grunt-svgmin": "^3.1.2",
+    "jit-grunt": "~0.10.0",
+    "time-grunt": "^0.2.10"
+  }
+}
