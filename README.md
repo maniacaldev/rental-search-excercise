@@ -67,4 +67,5 @@ Thank you!
 
 ## Credits
 [Car type images by Freepik](http://www.freepik.com/)
+
 [Tire image by Rohan Gupta from the Noun Project Under Creative Commons License 3.0](https://creativecommons.org/licenses/by/3.0/legalcode)
