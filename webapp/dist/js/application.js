@@ -140,7 +140,7 @@
         // console.log(data);
 
         // remove the loader spinner
-        // $('.loader-wrap').remove();
+        $('.loader-wrap').remove();
 
         // remove old search results
         $('#results').empty();
