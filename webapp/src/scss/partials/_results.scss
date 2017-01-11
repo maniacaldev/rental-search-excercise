@@ -7,16 +7,18 @@
 }
 
 #results {
-  min-height: 300px;
   h2 {
     margin: 0;
   }
   p {
     margin: 0.5em 0;
   }
+  @media (min-width: $medium) {
+    min-height: 300px;
+  }
 }
 
-.search-criteria {
+#search-criteria {
   background: $red;
   color: $white;
   padding: 15px;
@@ -28,13 +30,43 @@
   display: block;
   clear: both;
   p {
+    margin: 0;
     strong {
       color: $vdkgrey;
+      clear: both;
+      display: block;
+      width: 100%;
+      float: left;
     }
     > span {
-    float: right;
+      float: left;
       span {
         color: $vdkgrey;
+        display: inline-block;
+      }
+      span.spacer {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: $medium) {
+    p {
+      margin: 0.5em 0;
+      strong {
+        clear: none;
+        display: inline;
+        width: auto;
+        float: none;
+      }
+      > span {
+        float: right;
+        span {
+          display: inline-block;
+          padding: 0;
+        }
+        span.spacer {
+          display: inline-block;
+        }
       }
     }
   }
@@ -56,9 +88,29 @@
   width: 100%;
   padding: 15px;
   display: block;
-  @media (min-width: $medium) {
+  &:nth-child(1) {
     flex: 1 1 33.33333333%;
     width: 33.33333333%;
+  }
+  &:nth-child(2) {
+    flex: 1 1 66.66666666%;
+    width: 66.66666666%;
+    p {
+      font-size: (12rem / 16);
+    }
+  }
+  &:nth-child(3) {
+    padding-top: 0px;
+  }
+  @media (min-width: $medium) {
+    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+      flex: 1 1 33.33333333%;
+      width: 33.33333333%;
+      padding: 15px;
+      p {
+        font-size: inherit;
+      }
+    }
   }
 }
 

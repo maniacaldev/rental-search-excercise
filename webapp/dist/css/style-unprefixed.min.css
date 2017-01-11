@@ -1432,6 +1432,7 @@ body .loader-wrap {
   top: 0px;
   left: 0px;
   width: 100%;
+  max-width: 100%;
   height: calc(100%);
   background: rgba(0, 0, 0, 0.8);
   z-index: 100;
@@ -1505,17 +1506,19 @@ body .loader .wheel-component {
   position: relative;
 }
 
-#results {
-  min-height: 300px;
-}
 #results h2 {
   margin: 0;
 }
 #results p {
   margin: 0.5em 0;
 }
+@media (min-width: 48em) {
+  #results {
+    min-height: 300px;
+  }
+}
 
-.search-criteria {
+#search-criteria {
   background: #cf3535;
   color: #ffffff;
   padding: 15px;
@@ -1527,14 +1530,46 @@ body .loader .wheel-component {
   display: block;
   clear: both;
 }
-.search-criteria p strong {
-  color: #232323;
+#search-criteria p {
+  margin: 0;
 }
-.search-criteria p > span {
-  float: right;
-}
-.search-criteria p > span span {
+#search-criteria p strong {
   color: #232323;
+  clear: both;
+  display: block;
+  width: 100%;
+  float: left;
+}
+#search-criteria p > span {
+  float: left;
+}
+#search-criteria p > span span {
+  color: #232323;
+  display: inline-block;
+}
+#search-criteria p > span span.spacer {
+  display: none;
+}
+@media (min-width: 48em) {
+  #search-criteria p {
+    margin: 0.5em 0;
+  }
+  #search-criteria p strong {
+    clear: none;
+    display: inline;
+    width: auto;
+    float: none;
+  }
+  #search-criteria p > span {
+    float: right;
+  }
+  #search-criteria p > span span {
+    display: inline-block;
+    padding: 0;
+  }
+  #search-criteria p > span span.spacer {
+    display: inline-block;
+  }
 }
 
 .result {
@@ -1554,10 +1589,28 @@ body .loader .wheel-component {
   padding: 15px;
   display: block;
 }
+.result-col:nth-child(1) {
+  flex: 1 1 33.33333333%;
+  width: 33.33333333%;
+}
+.result-col:nth-child(2) {
+  flex: 1 1 66.66666666%;
+  width: 66.66666666%;
+}
+.result-col:nth-child(2) p {
+  font-size: 0.75rem;
+}
+.result-col:nth-child(3) {
+  padding-top: 0px;
+}
 @media (min-width: 48em) {
-  .result-col {
+  .result-col:nth-child(1), .result-col:nth-child(2), .result-col:nth-child(3) {
     flex: 1 1 33.33333333%;
     width: 33.33333333%;
+    padding: 15px;
+  }
+  .result-col:nth-child(1) p, .result-col:nth-child(2) p, .result-col:nth-child(3) p {
+    font-size: inherit;
   }
 }
 
@@ -1656,7 +1709,7 @@ input[type="submit"]:hover {
 #search-form label, #search-form .submit-wrap {
   flex: 1 100%;
   width: 100%;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -1695,6 +1748,9 @@ input[type="submit"]:hover {
   }
 }
 @media (min-width: 62em) {
+  #search-form label {
+    padding-top: 15px;
+  }
   #search-form label, #search-form .submit-wrap {
     flex: 1 1 25%;
     width: 25%;

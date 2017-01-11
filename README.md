@@ -50,9 +50,19 @@ This examples makes use of the HTML5 "date" input type which, while efficient, i
 
 ![HTML5 Date Input Browser Support](http://maniac.al/slimjim/dist/images/date-input-usage.png "HTML5 Date Input Browser Support")
 
+### Selecting Pick-up Time of Day
+For the sake of simplicity, the API call is set to a default pick-up and drop-off time of 23:30. A more robust production example would allow the user to select the time and include the selected time in the API call.
+
+
 ## General Notes
 
 The limitations described above are based on the relatively short (30-120 minute) timeline suggested to complete this exercise, which is a pretty short amount of time in which to build a bulletproof location-sensitive search app. Likewise, based on the timeline, it is very possible that there are additional issus with validation, error handling, etc. that I have not considered. If you would like me to dig deeper into a specific use case or situation, let me know and I'd be happy to update the environment.
+
+In a typical environment I would include instructions for getting both Grunt and the Vagrant environment up and running. For this excercise though, as I am providing both the code and the live example, I did not think it was necessary. If you'd like that information, I'd be happy to provide it.
+
+The Git repo does not include compiled/compressed production code as a best practice. If you'd like access to the production code, it can be found on the live site or I'd be happy to provide it by another means.
+
+Thank you!
 
 
 ## Credits
