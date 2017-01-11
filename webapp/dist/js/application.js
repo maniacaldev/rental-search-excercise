@@ -125,7 +125,7 @@
 
     var queryURL = '//api.hotwire.com/v1/search/car?apikey=vddxn5q8maz65xbty36e7uw2&format=jsonp&dest='+pickUpLocation+'&startdate='+pickUpDate+'&enddate='+dropOffDate+'&pickuptime=24:00&dropofftime=24:30';
 
-    $('body .search-wrap').prepend('<span class="loader-wrap"><svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style type="text/css"/><path class="st0 wheel-component" d="M40 0C18 0 0 18 0 40s18 40 40 40 40-18 40-40S62 0 40 0zM40 68c-15 0-28-12-28-28 0-15 12-28 28-28S68 25 68 40 55 68 40 68z"/><path class="st0 wheel-component" d="M65 38c0-4-2-8-4-11 -4 5-11 7-15 4 -4-3-4-10-1-15C44 15 42 15 40 15s-4 0-6 1c4 6 3 12-1 15S23 32 19 27c-2 3-3 7-4 11 6-2 13 1 14 5 2 5-2 10-8 13 3 3 6 6 10 7 0-7 4-12 10-12s9 5 10 12c4-1 7-4 10-7 -6-2-10-8-8-13C52 39 59 36 65 38zM40 48c-4 0-8-4-8-8s4-8 8-8 8 4 8 8S44 48 40 48z"/><circle class="st0 wheel-component" cx="40" cy="40" r="5"/></svg></span>');
+    $('body .search-wrap').prepend('<span class="loader-wrap"><span class="loader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style type="text/css"/><path class="st0 wheel-component" d="M40 0C18 0 0 18 0 40s18 40 40 40 40-18 40-40S62 0 40 0zM40 68c-15 0-28-12-28-28 0-15 12-28 28-28S68 25 68 40 55 68 40 68z"/><path class="st0 wheel-component" d="M65 38c0-4-2-8-4-11 -4 5-11 7-15 4 -4-3-4-10-1-15C44 15 42 15 40 15s-4 0-6 1c4 6 3 12-1 15S23 32 19 27c-2 3-3 7-4 11 6-2 13 1 14 5 2 5-2 10-8 13 3 3 6 6 10 7 0-7 4-12 10-12s9 5 10 12c4-1 7-4 10-7 -6-2-10-8-8-13C52 39 59 36 65 38zM40 48c-4 0-8-4-8-8s4-8 8-8 8 4 8 8S44 48 40 48z"/><circle class="st0 wheel-component" cx="40" cy="40" r="5"/></svg></span></span>');
 
     // get our available car information from Hotwire via JSONP to avoid cross-domain access restrictions
     $.ajax({
@@ -140,7 +140,7 @@
         // console.log(data);
 
         // remove the loader spinner
-        $('.loader-wrap').remove();
+        // $('.loader-wrap').remove();
 
         // remove old search results
         $('#results').empty();
