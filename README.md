@@ -56,6 +56,9 @@ This examples makes use of the HTML5 "date" input type which, while efficient, i
 ### Selecting Pick-up Time of Day
 For the sake of simplicity, the API call is set to a default pick-up and drop-off time of 23:30. A more robust production example would allow the user to select the time and include the selected time in the API call.
 
+### Performance
+If this weren't a client-side only example, all potential search results would ideally be cached on a local server for a quicker response.
+
 
 ## General Notes
 
