@@ -2,6 +2,8 @@
 
 This repoistory contains a car rental search application called Slim Jim, created for Turo as a code excercise. The name "Slim Jim" is a reference to the car lockout tool of the same name. This is a fitting as the application pulls data from the Hotwire Rental Search API.
 
+The live example of the site can be viewed at: [https://maniac.al/slimjim/](https://maniac.al/slimjim/)
+
 ## Technologies Used
 
 ### Grunt
