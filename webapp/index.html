@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <title>Turo Rental Car Search</title>
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/ico" href="/dist/images/touch-icon.png" sizes="180180">
+    <link rel="apple-touch-icon" href="/dist/images/touch-icon.png">
+
+    <!-- Load the Styles -->
+    <link href="/dist/css/style.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container header-inside">
+        <h1>Slim Jim</h1>
+      </div><!-- /container -->
+    </header>
+
+    <div class="search-wrap">
+      <div class="container group">
+
+        <div class="col-md-12 instructions">
+          <p>Welcome to <strong class="slimjim">Slim Jim</strong>! Your car rental is only a few steps away. <br>Enter the <strong>rental zip code</strong> along with your <strong>pick-up date</strong> and <strong>drop-off date</strong> below to view your car options.</p>
+        </div>
+
+        <form id="search-form" class="col-md-12">
+
+            <label for="pick-up-location">Location <input id="pick-up-location" name="pick-up-location" type="text" placeholder="e.g. '02110'"></label>
+
+            <label for="pick-up-date">Pick-up Date <input id="pick-up-date" name="pick-up-date" type="date"/><span class="error-text"></span></label>
+            <label for="drop-off-date">Drop-off Date <input id="drop-off-date" name="drop-off-date" type="date"/><span class="error-text"></span></label>
+
+            <div class="submit-wrap">
+              <input id="search-submit" type="submit" value="Search">
+            </div>
+
+            <span id="search-form-notifications"></span>
+
+        </form>
+
+      </div><!-- /container -->
+    </div>
+
+    <div class="results-wrap group">
+      <div class="container">
+
+        <div id="results" class="col-md-12">
+
+        </div>
+
+      </div><!-- /container -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <p>Code project by Christopher Gladney for his new friends at <a href="http://turo.com/" target="_blank">Turo</a>.</p>
+        <p>Car type images by <a href="http://www.freepik.com/" target="_blank">Freepik</a>. Tire image by <a href="https://thenounproject.com/rohangupta1/" target="_blank">Rohan Gupta</a> from the Noun Project Under <a href="https://creativecommons.org/licenses/by/3.0/legalcode" target="_blank">Creative Commons License 3.0</a>.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script src="//localhost:35729/livereload.js"></script>
+  <script src="/dist/js/vendor.min.js"></script>
+  <script src="/dist/js/application.min.js"></script>
+
+</html>

@@ -90,7 +90,7 @@ module.exports = function(grunt) {
         dest: '<%= path %>dist/js/application.js'
       },
       vendor: {
-        src: ['<%= path %>src/js/vendor/jquery-3.1.1.js'],
+        src: ['<%= path %>src/js/vendor/jquery-3.1.1.js', '<%= path %>src/js/vendor/jquery.validate.js', '<%= path %>src/js/vendor/jquery.scrollto.js', '<%= path %>src/js/vendor/moment.js', '<%= path %>src/js/vendor/moment-timezone.js'],
         dest: '<%= path %>dist/js/vendor.js'
       },
     },

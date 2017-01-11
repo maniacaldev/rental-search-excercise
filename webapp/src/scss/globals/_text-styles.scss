@@ -14,4 +14,37 @@ body {
   }
 }
 
+h1 {
+  @include lgitalic;
+  font-size: (48rem / 16);
+  font-style: italic;
+  color: $red;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  margin: 0;
+}
 
+h2 {
+  font-size: (32rem / 16);
+  @media (min-width: $medium) {
+    font-size: (34rem / 16);
+  }
+  @media (min-width: $medium) {
+    font-size: (36rem / 16);
+  }
+}
+
+a {
+  color: $red;
+  &:hover {
+    color: $vdkgrey;
+    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+header p, footer p {
+  text-align: center;
+  font-size: (12rem / 16);
+}

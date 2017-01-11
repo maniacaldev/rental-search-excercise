@@ -1,0 +1,81 @@
+body {
+  @include latoregular;
+  color: $dkgrey;
+  strong {
+    @include latobold;
+  }
+  > .container:first-of-type {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .loader-wrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100%);
+    background: rgba(00,00,00,0.8);
+    z-index: 100;
+  }
+  .loader {
+    width: 4em;
+    height: 4em;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+    z-index: 100;
+    .wheel-component {
+      animation-name: wheel-component-fill;
+      animation-duration: 1.5s;
+      animation-iteration-count:  infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes wheel-component-fill {
+  0% {
+    fill: $dkgrey;
+  }
+  25% {
+    fill: $dkgrey;
+  }
+  50% {
+    fill: $red;
+  }
+  75% {
+    fill: $dkgrey;
+  }
+  100% {
+    fill: $dkgrey;
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

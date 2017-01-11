@@ -8,11 +8,13 @@
 @import "globals/grid-system";
 @import "globals/text-fonts";
 @import "globals/text-styles";
-@import "globals/forms";
 @import "globals/header";
 @import "globals/footer";
+@import "globals/universal-structure";
 
 /* Vendor CSS */
 
 
 /* Partials */
+@import "partials/results";
+@import "partials/search-form";

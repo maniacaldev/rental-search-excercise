@@ -1,3 +1,15 @@
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 /* Webfont: Lato-Bold */@font-face {
     font-family: 'latobold';
     src: url('../fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
@@ -10,14 +22,26 @@
     text-rendering: optimizeLegibility;
 }
 
-/* Webfont: Lato-Regular */@font-face {
-    font-family: 'latoregular';
-    src: url('../fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
-         url('../fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Lato-Regular.ttf') format('truetype');
-    font-style: normal;
+/* Webfont: League Gothic Italic */@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-italic-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
+    font-style: normal;
     text-rendering: optimizeLegibility;
+}
+
+@mixin latoregular {
+  font-family: "latoregular", sans-serif;
+}
+
+@mixin latobold {
+  font-family: "latobold", sans-serif;
+}
+
+@mixin lgitalic {
+  font-family: 'League Gothic';
 }

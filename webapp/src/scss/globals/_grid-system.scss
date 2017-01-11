@@ -4,15 +4,14 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.container, .header-inside {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 7px;
   padding-right: 7px;
 }
 header {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .container, .header-inside {
